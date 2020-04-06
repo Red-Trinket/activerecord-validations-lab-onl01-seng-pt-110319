@@ -12,4 +12,6 @@ class Post < ActiveRecord::Base
             errors.add(:title, "You need a more exciting title")
         end
     end
+    
+    @@phrases = [/won't believe/, /secret/, /top \d/, /guess/]
 end
