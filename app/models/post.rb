@@ -9,4 +9,5 @@ class Post < ActiveRecord::Base
     if !title.nil? && (!title.include?("You Won't" || "Secret" || "Top" || "Guess")) 
       errors.add(:title_is_clickbait, "That is not a clickbait worthy title. Try again.")
     end
+  end 
 end
